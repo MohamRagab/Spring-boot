@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "506571be-553f-49fb-9a9b-e585d93b6f8e",
+		"name": "hr-spring-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40023070"
+	},
+	"item": [
+		{
+			"name": "get-alls-employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\" : 15 ,\r\n    \"firstName\": \"Ahmed22\",\r\n    \"lastName\": \"Ragab\",\r\n    \"salary\": 24000.2,\r\n    \"phoneNum\": \"0546041716545\",\r\n    // \"hireDate\": \"2025-04-06T14:45:00\",\r\n    \"jobId\": \"AD\",\r\n    \"commPct\": 10.1,\r\n    \"managerId\": 10.2,\r\n    \"departmentId\": 10.1,\r\n    \"email\": \"Ahmed2@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-getEmpById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\" : 15 ,\r\n    \"firstName\": \"Ahmed22\",\r\n    \"lastName\": \"Ragab\",\r\n    \"salary\": 24000.2,\r\n    \"phoneNum\": \"0546041716545\",\r\n    // \"hireDate\": \"2025-04-06T14:45:00\",\r\n    \"jobId\": \"AD\",\r\n    \"commPct\": 10.1,\r\n    \"managerId\": 10.2,\r\n    \"departmentId\": 10.1,\r\n    \"email\": \"Ahmed2@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/getempbyid?id=17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"getempbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "17"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-InsertEmp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\" : 17 ,\r\n    \"firstName\": \"Ahmed17\",\r\n    \"lastName\": \"Ragab\",\r\n    \"salary\": 24000.2,\r\n    \"phoneNum\": \"0546041716545\",\r\n    // \"hireDate\": \"2025-04-06T14:45:00\",\r\n    \"jobId\": \"AD\",\r\n    \"commPct\": 10.1,\r\n    \"managerId\": 10.2,\r\n    \"departmentId\": 10.1,\r\n    \"email\": \"Ahmed17@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-updateEmp",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\" : 17 ,\r\n    \"firstName\": \"Ahmed1777\",\r\n    \"lastName\": \"Ragab\",\r\n    \"salary\": 24000.2,\r\n    \"phoneNum\": \"0546041716545\",\r\n    // \"hireDate\": \"2025-04-06T14:45:00\",\r\n    \"jobId\": \"AD\",\r\n    \"commPct\": 10.1,\r\n    \"managerId\": 10.2,\r\n    \"departmentId\": 10.1,\r\n    \"email\": \"Ahmed17@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employees-deleteEmp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/employees?id=11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
